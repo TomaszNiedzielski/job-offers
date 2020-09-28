@@ -8,7 +8,7 @@ export default class Navbar extends React.Component {
         return(
             <nav>
                 <a href="/" className="navbar__title">Job Offers</a>
-                <a href="/add-offer" style={styles.button}>
+                <a href="/#add-offer" style={styles.button}>
                     <span>Post a job</span>
                 </a>
             </nav>

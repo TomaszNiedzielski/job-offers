@@ -48,7 +48,6 @@ export default class ApplyForJobForm extends React.Component {
 
     apply() {
         const { name, email } = this.state;
-        console.log(name, email);
         this.setState({
             name: null,
             email: null

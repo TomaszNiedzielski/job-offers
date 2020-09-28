@@ -11,8 +11,6 @@ export default class Header extends React.Component {
 
     render() {
         const { title, salary, company } = this.props;
-        console.log('header: ', title);
-        console.log('company logo: ', company.logo);
         return(
             <>
                 <div className="offer-details-header">

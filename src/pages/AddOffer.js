@@ -134,9 +134,6 @@ class AddOffer extends React.Component {
     handleSubmit() {
         const { companyName, companyWebsite, title, salaryFrom, salaryTo, location, logo, description } = this.state;
 
-        console.log(companyName, companyWebsite, title, salaryFrom, salaryTo, location, logo, description);
-        console.log();
-
         if(this.isDataCorrect() === false) {
             return;
         }
@@ -159,31 +156,7 @@ class AddOffer extends React.Component {
 
         this.props.addOffer(offer);
         
-        window.location.href = '/';
-        
-        // In real app it's gonna be send to server
-        /*const formData = new FormData();
-        formData.append('image', logo);
-        formData.append('companyName', companyName);
-        formData.append('companyWebsite', companyWebsite);
-        formData.append('title', title);
-        formData.append('salaryFrom', salaryFrom);
-        formData.append('salaryTo', salaryTo);
-        formData.append('location', location);
-        formData.append('description', description);
-
-        fetch(ApiUrl+'offer/create', {
-            method: 'POST',
-            body: formData
-        })
-        .then((response) => response.json())
-        .then((responseJson) => {
-            window.location.href = '/';            
-        })
-        .catch((error) => {
-            alert('Something went wrong.');
-        });*/
-
+        window.location.href = '/job-offers';
     }
 
     isDataCorrect() {

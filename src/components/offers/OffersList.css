@@ -24,7 +24,7 @@
     padding: 10px;
 }
 .offer-item__company-logo {
-    max-width: 120px;
+    width: 120px;
     align-self: center;
     height: 100%;
     object-fit: cover;

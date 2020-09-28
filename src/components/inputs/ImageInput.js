@@ -27,11 +27,8 @@ export default class ImageInput extends React.Component {
     }
 
     handleFiles = (files) => {
-        console.log(files);
         this.setState({ img: files.base64 });
-        //this.props.handleChange(files.fileList[0]);
         this.props.handleChange(files.base64);
-        console.log(files);
     }
 
 }

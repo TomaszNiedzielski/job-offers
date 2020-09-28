@@ -1,16 +1,17 @@
 import React from 'react';
 import './Navbar.css';
 import Colors from '../../constans/Colors';
+import { Link } from 'react-router-dom';
 
 export default class Navbar extends React.Component {
 
     render() {
         return(
             <nav>
-                <a href="/" className="navbar__title">Job Offers</a>
-                <a href="/#add-offer" style={styles.button}>
+                <Link to={"/"} className="navbar__title">Job Offers</Link>
+                <Link to={"/add-offer"} style={styles.button}>
                     <span>Post a job</span>
-                </a>
+                </Link>
             </nav>
         );
     }

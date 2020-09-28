@@ -8,7 +8,7 @@ import AddOffer from './pages/AddOffer';
 import Navbar from './components/navbar/Navbar';
 
 import {
-    HashRouter as Router,
+    BrowserRouter as Router,
     Route,
     Switch
 } from 'react-router-dom';
@@ -16,10 +16,8 @@ import {
 function App() {
     return (
         <>
-        <Navbar/>
-        <Router
-            basename="/"
-        >
+        <Router basename="job-offers">
+            <Navbar/>
             <Switch>
                 <Route exact path="/" component={Offers} />
                 <Route path="/offers" component={OfferDetails} />

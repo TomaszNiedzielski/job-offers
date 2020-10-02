@@ -8,7 +8,7 @@ import AddOffer from './pages/AddOffer';
 import Navbar from './components/navbar/Navbar';
 
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Route,
     Switch
 } from 'react-router-dom';
